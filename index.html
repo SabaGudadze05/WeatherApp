@@ -1,0 +1,71 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        />
+        <link
+            rel="shortcut icon"
+            href="./Custom-Icon-Design-Lovely-Weather-Fog-day.512.png"
+            type="image/x-icon"
+        />
+        <title>Weather App</title>
+    </head>
+    <body>
+        <div class="container">
+            <section class="main_section" id="main_section">
+                <form action="" class="main_section_form">
+                    <input
+                        type="text"
+                        autocomplete="off"
+                        class="main_section_input"
+                        id="search"
+                    />
+                    <button class="main_section_button" id="search_icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+                <article class="weather_article">
+                    <figure class="weather_article_figure" id="city">
+                        <!-- <figcaption></figcaption>
+                        <img src="https://flagsapi.com/GE/shiny/32.png" /> -->
+                    </figure>
+                    <figure class="temp_figure" id="temperature">
+                        <!-- <img
+                            src="http://openweathermap.org/img/wn/10d@4x.png"
+                            alt=""
+                        /> -->
+                        <img src="https://placehold.co/150x150" alt="" />
+                        <figcaption>
+                            <span></span>
+                            <sup>℃</sup>
+                        </figcaption>
+                    </figure>
+                    <p class="desc" id="description"></p>
+                    <ul class="main_section_ul">
+                        <li class="main_section_ul_li">
+                            <span>Clouds</span>
+                            <i class="fa-solid fa-cloud"></i>
+                            <span id="clouds"></span>
+                        </li>
+                        <li class="main_section_ul_li humidity">
+                            <span>Humidity</span>
+                            <i class="fa-solid fa-droplet"></i>
+                            <span id="humidity"></span>
+                        </li>
+                        <li class="main_section_ul_li pressure">
+                            <span>Pressure</span>
+                            <i class="fa-solid fa-gauge"></i>
+                            <span id="pressure"></span>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+        </div>
+        <script src="./main/main.js"></script>
+    </body>
+</html>
